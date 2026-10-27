@@ -1,1 +1,1 @@
-pandoc slides.md -t beamer -o slides.pdf   --citeproc  --bibliography=refs.bib   -f markdown+implicit_figures
+pandoc slides.md -o slides.pdf -t beamer --citeproc  --bibliography=refs.bib   -f markdown+implicit_figures

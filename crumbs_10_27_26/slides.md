@@ -50,9 +50,89 @@ header-includes:
 
 ![](img/repo.png)
 
+# Your slides can have subsections
+
+## subsection 1
+a lot of words can go here. Maybe a quote from a book or something
+
+## subsection 2
+- alternatively, you can use bullets 
+- like
+- this
+
+# What do you need installed?
+
+- pandoc
+- pdflatex (or any other latex compiler)
+
 # Example reference
 
 I wrote a paper on MBFC @ruiziglesias2026stop.
+
+You can also include footnotes^[like this].
+
+# Example of two-column slide with table (content taken from one of Ale's existing presentation)
+
+```{=latex}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\footnotesize
+
+\textbf{Entire database}
+\vspace{5px}
+\begin{table}
+\tiny
+\begin{tabular}{|l|p{2cm}|p{2cm}|}
+\hline
+\cline{2-3}
+& Papers with text & All papers \\
+\hline
+Papers with MBFC & 329 (5.01\%) & 372 (3.50\%) \\
+Total papers     & 6,514        & 10,642 \\
+\hline
+\end{tabular}
+\end{table}
+\vspace{10px}
+\textbf{Papers containing "misinformation"}
+\vspace{5px}
+\begin{table}
+\tiny
+\begin{tabular}{|l|p{2cm}|p{2cm}|}
+\hline
+\cline{2-3}
+& Papers with text & All papers \\
+\hline
+Papers with MBFC & 259 (7.38\%) & 263 (6.49\%) \\
+Total papers     & 3,509        & 4,051 \\
+\hline
+\end{tabular}
+\end{table}
+\vspace{10px}
+```
+
+**More text goes here**
+
+\tiny
+- little
+- tiny
+- bullets
+
+```{=latex}
+\end{column}
+\begin{column}{0.39\textwidth}
+
+\end{column}
+\end{columns}
+
+```
+
+# Example figure (using latex)
+
+```{=latex}
+\begin{figure}
+\includegraphics{img/repo.png}
+\end{figure}
+```
 
 # References {.allowframebreaks}
 \tiny
